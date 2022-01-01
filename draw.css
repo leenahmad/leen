@@ -61,6 +61,17 @@ canvas{
     border: 2px solid white;
 }
 
+.tools .upload {
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    border: 2px solid Iwhite;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
 .color-picker:hover{
     border: 2px solid rgb(120, 120, 131);
 }
@@ -68,3 +79,4 @@ canvas{
     align-self: center;
     margin: 0 10px;
 }
+

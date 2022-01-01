@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="draw.css">
 
-    <title>Document</title>
+    <title>Leen App</title>
 </head>
 <body>
 
@@ -17,10 +17,13 @@
             <button onClick="undo_last()" type="button" class="button">Undo</button>
             <button onClick="clear_canvas()" type="button" class="button">Clear</button>
 
+            <input type="file" multiple="false" class ="upload" accept="image/*" id="finput" onchange="upload()"> 
+
             <div onClick="change_color(this)" class="color-field" style="background: rgb(209, 34, 122);"></div>
             <div onClick="change_color(this)" class="color-field" style="background: rgb(60, 155, 233);"></div>
             <div onClick="change_color(this)" class="color-field" style="background:rgb(54, 110, 64);"></div>
             <div onClick="change_color(this)" class="color-field" style="background: rgb(255, 208, 0);"></div>
+
 
             <input onInput="draw_color = this.value" type="color" class="color-picker">
             <input onInput="draw_width = this.value" type="range" min="1" max="100" class="pen-range">
@@ -28,6 +31,8 @@
     </div>
 
     <script src="draw.js"></script>
+
+    <!-- <footer>leen ahmad</footer> -->
 
 </body>
 </html>

@@ -14,9 +14,20 @@ let is_drawing = false;
 let restore_array = [];
 let index = -1;
 
+
+
+
 function change_color(element){
     draw_color = element.style.background;
 }
+
+
+function upload(){
+    var fileinput = document.getElementById("#finput");
+    var image = new SimpleImage(fileinput);
+    var canvas = document.getElementById("canvas");
+    image.drawTo(canvas);
+  }
 
 
 
@@ -154,3 +165,11 @@ if( index <= 0) {
     context.putImageData(restore_array[index], 0, 0);
 }
 }
+
+
+
+
+
+
+
+
