@@ -7,7 +7,21 @@ body{
     background: rgb(32, 32, 32);
 
 }
+@media (min-width: 600px) {
+    .column {
+      width: 50%;
+    }
+  }
 
+@viewport {
+    width: device-width;
+    zoom: 1;
+  }
+
+
+  img, video, canvas {
+    max-width: 100%;
+  }
 canvas{
     box-shadow: -3px 2px 9px 6px black;
     cursor: pointer;
