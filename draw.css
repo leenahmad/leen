@@ -77,17 +77,6 @@ canvas{
     border: 2px solid white;
 }
 
-.tools .upload {
-    align-self: center;
-    width: 100px;
-    height: 40px;
-    border: 2px solid Iwhite;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    margin: 0 10px;
-}
-
 .tools .upload{
     align-self: center;
     width: 100px;
@@ -96,7 +85,7 @@ canvas{
     cursor: pointer;
     color: white;
     font-weight: bold;
-    margin: 0 10px;
+    margin: 0 2px;
 }
 
 
