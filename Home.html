@@ -17,8 +17,8 @@
     <div class="field">
         <canvas id="canvas"></canvas>
         <div class="tools">
-            <button onClick="undo_last()" type="button" class="button">Undo</button>
-            <button onClick="clear_canvas()" type="button" class="button">Clear</button>
+            <!-- <button onClick="undo_last()" type="button" class="button">Undo</button> -->
+            <!-- <button onClick="clear_canvas()" type="button" class="button">Clear</button> -->
 
 
               <input type="file" multiple="false" class ="upload" accept="image/*" id="finput" onchange="upload()">  
@@ -31,6 +31,9 @@
 
             <input onInput="draw_color = this.value" type="color" class="color-picker">
             <input onInput="draw_width = this.value" type="range" min="1" max="100" class="pen-range">
+
+            <button onClick="undo_last()" type="button" class="button">Undo</button>
+            <button onClick="clear_canvas()" type="button" class="button">Clear</button>
         </div>
     </div>
 
