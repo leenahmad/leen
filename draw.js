@@ -168,6 +168,14 @@ if( index <= 0) {
 
 
 
+function upload(){
+    var fileinput = document.getElementById("finput");
+    var image = new SimpleImage(fileinput);
+    var canvas = document.getElementById("canvas");
+    image.drawTo(canvas);
+  }
+
+
 
 
 
