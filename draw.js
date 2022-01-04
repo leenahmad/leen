@@ -147,6 +147,71 @@ function renderCanvas() {
     }
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const fileInput = document.querySelector("#upload");
+
+  // enabling drawing on the blank canvas
+  drawOnImage();
+  
+  fileInput.addEventListener("change", async (e) => {
+    const [file] = fileInput.files;
+  
+    // displaying the uploaded image
+    const image = document.createElement("img");
+    image.src = await fileToDataUri(file);
+  
+    // enbaling the brush after after the image
+    // has been uploaded
+    image.addEventListener("load", () => {
+      drawOnImage(image);
+    });
+  
+    return false;
+  });
+  
+  function fileToDataUri(field) {
+    return new Promise((resolve) => {
+      const reader = new FileReader();
+  
+      reader.addEventListener("load", () => {
+        resolve(reader.result);
+      });
+  
+      reader.readAsDataURL(field);
+    });
+  }
+
+
+  function drawOnImage(image = null) {
+    // const canvasElement = document.getElementById("canvas");
+    // const context = canvasElement.getContext("2d");
+  
+    // if an image is present,
+    // the image passed as a parameter is drawn in the canvas
+    if (image) {
+      const imageWidth = image.width;
+      const imageHeight = image.height;
+  
+      // rescaling the canvas element
+      canvas.width = imageWidth;
+      canvas.height = imageHeight;
+  
+      context.drawImage(image, 0, 0, imageWidth, imageHeight);
+    }
+  
+    let isDrawing;
+}
+
+console.log(drawOnImage);
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// clear function to clear what inside canves 
 function clear_canvas() {
     context.fillStyle = start_background_color;
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -156,6 +221,8 @@ function clear_canvas() {
     index = -1;
 }
 
+
+// undo function to undo what your write /draw 
 function undo_last() {
 if( index <= 0) {
     clear_canvas();
@@ -168,12 +235,12 @@ if( index <= 0) {
 
 
 
-function upload(){
-    var fileinput = document.getElementById("finput");
-    var image = new SimpleImage(fileinput);
-    var canvas = document.getElementById("canvas");
-    image.drawTo(canvas);
-  }
+// function upload(){
+//     var fileinput = document.getElementById("finput");
+//     var image = new SimpleImage(fileinput);
+//     var canvas = document.getElementById("canvas");
+//     image.drawTo(canvas);
+//   }
 
 
 
