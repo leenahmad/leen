@@ -79,8 +79,8 @@ canvas{
 
 .tools #upload{
     align-self: center;
-    width: 100px;
-    height: 40px;
+    /* width: 100px;
+    height: 40px; */
     border: 2px solid Iwhite;
     cursor: pointer;
     color: white;
