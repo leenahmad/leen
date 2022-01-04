@@ -77,7 +77,7 @@ canvas{
     border: 2px solid white;
 }
 
-/* .tools .upload{
+.tools #upload{
     align-self: center;
     width: 100px;
     height: 40px;
@@ -86,7 +86,7 @@ canvas{
     color: white;
     font-weight: bold;
     margin: 0 10px;
-} */
+}
 
 
 .color-picker:hover{
