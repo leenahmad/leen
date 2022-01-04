@@ -205,12 +205,9 @@ const fileInput = document.querySelector("#upload");
 
 console.log(drawOnImage);
 
-
-
-
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 // clear function to clear what inside canves 
 function clear_canvas() {
     context.fillStyle = start_background_color;
@@ -234,13 +231,6 @@ if( index <= 0) {
 }
 
 
-
-// function upload(){
-//     var fileinput = document.getElementById("finput");
-//     var image = new SimpleImage(fileinput);
-//     var canvas = document.getElementById("canvas");
-//     image.drawTo(canvas);
-//   }
 
 
 
