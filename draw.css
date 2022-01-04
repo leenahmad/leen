@@ -22,10 +22,10 @@ body{
   img, video, canvas {
     max-width: 100%;
   }
-canvas{
+/* canvas{
     box-shadow: -3px 2px 9px 6px black;
     cursor: pointer;
-}
+} */
 
 .tools{
     display: flex;
